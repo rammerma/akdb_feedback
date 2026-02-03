@@ -42,3 +42,7 @@ env/
 output/
 *.xlsx
 *.csv
+
+# Secrets
+.env.local
+app.env.local

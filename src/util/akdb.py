@@ -1,5 +1,11 @@
+import os
+
+token = os.getenv('AKDB_TOKEN')
+if not token:
+    raise ValueError("Umgebungsvariable AKDB_TOKEN ist nicht gesetzt")
+
 headers = {
-  "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IklPRFJPMmZUOXh2c2ZQblJIdHhJeWZIM1N4OTJJN1RFcnNpM0dxOEd4In0.eyJ1c2VybmFtZSI6InJvbGYuYW1tZXJtYW5uIiwidXVpZCI6IjViNGM1NTBlLWRkODgtNGMwZi05Y2QyLWU1ZGY0MDIxNzI1YiJ9.LgBcyJXxp2IoRafK9aGgmwrF7r76i8JlmGEBZoWhaa6ad_9MxrYf6Sl4Usxb4Rvr_XS2wDJUQwfj5L4__rE56g"
+  "Authorization" : f"Bearer {token}"
 }
 
 # Die URL der GraphQL-Schnittstelle
