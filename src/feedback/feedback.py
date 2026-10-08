@@ -19,6 +19,7 @@ class FeedbackData:
         self.exportServiceFeedbackRaw("at-fachkraefteverfahren")
         self.exportServiceFeedbackRaw("aw-aufenthaltskarte")
         self.exportServiceFeedbackRaw("at-humanitaere-gruende")
+        self.exportServiceFeedbackRaw("aw-rueckkanal-antwort")
         
 
     def exportServiceFeedbackRaw(self,pService):
